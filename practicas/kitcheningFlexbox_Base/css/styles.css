@@ -36,6 +36,7 @@ header{
 .logo{
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .logo img{
@@ -44,6 +45,7 @@ header{
 
 .navheader{
     color: #666;
+    width: 100%;
 }
 
 .itemsheader{
@@ -51,9 +53,24 @@ header{
     justify-content: space-between;
 }
 
+.itemsheader li {
+    background-color: #444;
+    width: 180px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
+}
+
 body{
     background-image: url("../images/bg-body.png");
-    padding: 100px;
+    padding: 100px 0;
+}
+
+.banner {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .banner img {
@@ -64,13 +81,41 @@ body{
 .productos{
     display: flex;
     flex-wrap: wrap;
+    width: 1180px;
+    gap: 20px;
+}
+
+.producto{
+    width: 380px;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 footer{
     background-color: rgb(200,0,0);
+    margin-top: 30px;
+    width: 1180px;
 }
 
 .itemsfooter{
     display: flex;
     justify-content: space-between;
+}
+
+body {
+    background-image: url("../images/bg-body.png");
+    padding: 100px 0;
+}
+
+header,
+.banner,
+.productos,
+footer {
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
 }
