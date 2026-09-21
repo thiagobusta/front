@@ -6,7 +6,7 @@ function rectangulo(height, width){
 console.log(rectangulo(10, 8))
 
 function dolarhoy(ars){
-    let cambio = ars * 1550
+    let cambio = ars / 1550
     return cambio
 }
 
@@ -40,3 +40,29 @@ function siguienteDelDoble(numero) {
    return siguiente(doble(numero));
 }
 console.log(siguienteDelDoble(20))
+
+function calc(num1, num2, operacion){
+    let resultado
+    if (operacion == "+"){
+        resultado = num1 + num2
+    }
+    else if (operacion == "-"){
+        resultado = num1 - num2
+    }
+    else if (operacion == "*"){
+        resultado = num1 * num2
+    }
+    else if (operacion == "/"){
+        resultado = num1 / num2
+    }
+    else{
+        resultado = "error"
+    }
+    
+    return resultado
+}
+
+console.log(calc(10, 5, "+"))
+console.log(calc(10, 5, "-"))
+console.log(calc(10, 5, "*"))
+console.log(calc(10, 5, "/"))
