@@ -10,7 +10,7 @@ if (respuesta) {
 
 let nombre = prompt("¿Cómo te llamás?");
 
-document.querySelector("h1").textContent = "Bienvenido " + nombre;
+document.querySelector("h1").innerText = "Bienvenido " + nombre;
 
 let edad = prompt("¿Cuántos años tenés?");
 
@@ -28,3 +28,26 @@ else {
         document.querySelector(".background-img").innerHTML = '<img src="./img/gatito.jpeg">';
     }
 }
+
+let avatar = document.querySelector(".avatar")
+
+avatar.src = "./img/fotodeperfil.jpg"
+
+let nombrepelicula = prompt("¿Cuál es el nombre de tu película favorita?");
+let directorpelicula = prompt("¿Cuál es el director/a de tu película favorita?");
+let duracionpelicula = prompt("¿Cuál es la duración de tu película favorita?");
+let actorpelicula = prompt("¿Cuál es el actor de tu película favorita?");
+
+let pelicula = {
+    nombre: nombrepelicula,
+    director: directorpelicula,
+    duracion: Number(duracionpelicula),
+    actor: actorpelicula
+};
+
+document.querySelector("#nombre").innerText = pelicula.nombre;
+document.querySelector("#director").innerText = pelicula.director;
+document.querySelector("#duracion").innerText = pelicula.duracion;
+document.querySelector("#actor").innerText = pelicula.actor;
+
+document.querySelector(".contenido-bloqueado").style.display = "block";
