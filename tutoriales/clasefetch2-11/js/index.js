@@ -14,7 +14,9 @@ fetch(endpoint)
             lista.innerHTML += `
                 <article>
                     <img src = ${resultado[i].image} alt="imagen">
-                    <p> Name: ${resultado[i].name}</p>
+                    <a href="detalle.html?id=${resultado[i].id}">
+                        <p> Name: ${resultado[i].name}</p>
+                    </a>
                     <p>Status: ${resultado[i].status}</p>
                 </article>
             `

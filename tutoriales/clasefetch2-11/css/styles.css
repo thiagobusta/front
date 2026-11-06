@@ -1,7 +1,9 @@
-* {
+.CharacterList, .search-results {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+}
+
+article {
     margin: 15px;
-    align-items: center;
+    text-align: center;
 }
